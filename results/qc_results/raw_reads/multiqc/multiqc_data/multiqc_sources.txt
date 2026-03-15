@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR8146972_1	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146972_1_fastqc.zip
+FastQC	all_sections	SRR8146972_2	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146972_2_fastqc.zip
+FastQC	all_sections	SRR8146973_1	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146973_1_fastqc.zip
+FastQC	all_sections	SRR8146973_2	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146973_2_fastqc.zip
+FastQC	all_sections	SRR8146974_1	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146974_1_fastqc.zip
+FastQC	all_sections	SRR8146974_2	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146974_2_fastqc.zip
+FastQC	all_sections	SRR8146975_1	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146975_1_fastqc.zip
+FastQC	all_sections	SRR8146975_2	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146975_2_fastqc.zip
+FastQC	all_sections	SRR8146976_1	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146976_1_fastqc.zip
+FastQC	all_sections	SRR8146976_2	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146976_2_fastqc.zip
+FastQC	all_sections	SRR8146977_1	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146977_1_fastqc.zip
+FastQC	all_sections	SRR8146977_2	/scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads/SRR8146977_2_fastqc.zip

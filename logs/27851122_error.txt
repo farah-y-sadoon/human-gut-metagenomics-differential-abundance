@@ -1,0 +1,8 @@
+
+/// MultiQC 🔍 v1.33
+
+       file_search | Search path: /scratch/fsadoon/human-gut-metagenomics-differential-abundance/results/qc_results/raw_reads
+            fastqc | Found 12 reports
+     write_results | Data        : results/qc_results/raw_reads/multiqc/multiqc_data
+     write_results | Report      : results/qc_results/raw_reads/multiqc/multiqc_report.html
+           multiqc | MultiQC complete

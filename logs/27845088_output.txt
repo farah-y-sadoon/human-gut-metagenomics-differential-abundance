@@ -1,0 +1,24 @@
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+Analysis complete for SRR8146972_1.fastq
+Analysis complete for SRR8146972_2.fastq
+Analysis complete for SRR8146976_1.fastq
+Analysis complete for SRR8146976_2.fastq
+Analysis complete for SRR8146974_2.fastq
+Analysis complete for SRR8146973_1.fastq
+Analysis complete for SRR8146975_2.fastq
+Analysis complete for SRR8146975_1.fastq
+Analysis complete for SRR8146973_2.fastq
+Analysis complete for SRR8146974_1.fastq
+Analysis complete for SRR8146977_1.fastq
+Analysis complete for SRR8146977_2.fastq

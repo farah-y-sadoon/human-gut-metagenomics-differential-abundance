@@ -1,0 +1,11 @@
+# Bioinformatics Data
+*.fastq.gz
+*.fastq
+*.fna
+*.fq
+*.zip
+*.tar*
+logs/download_db_*.txt
+
+# System files
+.DS_Store
