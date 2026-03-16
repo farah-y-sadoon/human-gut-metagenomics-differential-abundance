@@ -16,8 +16,7 @@ module load StdEnv/2023 sra-toolkit/3.0.9
 OUT_DIR="./data/raw/"
 mkdir -p "$OUT_DIR"
 
-for i in {72..77};
-do
-echo "Dowloading SRR81469"${i}
-prefetch SRR81469${i} -O "$OUT_DIR"
+for i in {72..77}; do
+    echo "Dowloading SRR81469"${i}
+    prefetch SRR81469${i} -O "$OUT_DIR"
 done
