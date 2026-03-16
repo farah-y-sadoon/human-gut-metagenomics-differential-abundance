@@ -1,4 +1,3 @@
-06_trim_adapters.sh
 #!/bin/bash
 # Script to trim adapters with Fastp
 
