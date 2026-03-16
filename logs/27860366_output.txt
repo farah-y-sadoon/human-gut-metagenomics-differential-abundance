@@ -1,0 +1,40 @@
+Trimming and filtering reads...
+Running command: fastp -i ./data/raw/SRR8146974_1.fastq -o ./data/filtered/SRR8146974_1.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146974_1.fastq.html --json=./results/filtered_reads/SRR8146974_1.fastq.json
+Running command: fastp -i ./data/raw/SRR8146972_1.fastq -o ./data/filtered/SRR8146972_1.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146972_1.fastq.html --json=./results/filtered_reads/SRR8146972_1.fastq.json
+Running command: fastp -i ./data/raw/SRR8146975_1.fastq -o ./data/filtered/SRR8146975_1.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146975_1.fastq.html --json=./results/filtered_reads/SRR8146975_1.fastq.json
+Running command: fastp -i ./data/raw/SRR8146977_1.fastq -o ./data/filtered/SRR8146977_1.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146977_1.fastq.html --json=./results/filtered_reads/SRR8146977_1.fastq.json
+Running command: fastp -i ./data/raw/SRR8146976_2.fastq -o ./data/filtered/SRR8146976_2.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146976_2.fastq.html --json=./results/filtered_reads/SRR8146976_2.fastq.json
+Running command: fastp -i ./data/raw/SRR8146972_2.fastq -o ./data/filtered/SRR8146972_2.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146972_2.fastq.html --json=./results/filtered_reads/SRR8146972_2.fastq.json
+Running command: fastp -i ./data/raw/SRR8146973_1.fastq -o ./data/filtered/SRR8146973_1.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146973_1.fastq.html --json=./results/filtered_reads/SRR8146973_1.fastq.json
+Running command: fastp -i ./data/raw/SRR8146976_1.fastq -o ./data/filtered/SRR8146976_1.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146976_1.fastq.html --json=./results/filtered_reads/SRR8146976_1.fastq.json
+Running command: fastp -i ./data/raw/SRR8146975_2.fastq -o ./data/filtered/SRR8146975_2.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146975_2.fastq.html --json=./results/filtered_reads/SRR8146975_2.fastq.json
+Running command: fastp -i ./data/raw/SRR8146977_2.fastq -o ./data/filtered/SRR8146977_2.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146977_2.fastq.html --json=./results/filtered_reads/SRR8146977_2.fastq.json
+Running command: fastp -i ./data/raw/SRR8146974_2.fastq -o ./data/filtered/SRR8146974_2.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146974_2.fastq.html --json=./results/filtered_reads/SRR8146974_2.fastq.json
+Running command: fastp -i ./data/raw/SRR8146973_2.fastq -o ./data/filtered/SRR8146973_2.clean.fastq.gz --detect_adapter_for_pe     --length_required 50     --qualified_quality_phred 20     --unqualified_percent_limit 20 --html=./results/filtered_reads/SRR8146973_2.fastq.html --json=./results/filtered_reads/SRR8146973_2.fastq.json
+
+
+
+
+
+
+
+
+
+
+
+
+Time used: 1846.2311737537384
+Trimming and filtering complete.
+total 33G
+-rw-r----- 1 fsadoon fsadoon 2.3G Mar 15 19:30 SRR8146972_1.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 2.3G Mar 15 19:30 SRR8146972_2.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 2.9G Mar 15 19:31 SRR8146973_1.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 2.9G Mar 15 19:31 SRR8146973_2.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 3.0G Mar 15 19:31 SRR8146974_1.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 3.0G Mar 15 19:31 SRR8146974_2.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 3.0G Mar 15 19:31 SRR8146975_1.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 3.0G Mar 15 19:31 SRR8146975_2.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 2.4G Mar 15 19:30 SRR8146976_1.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 2.3G Mar 15 19:30 SRR8146976_2.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 3.3G Mar 15 19:31 SRR8146977_1.clean.fastq.gz
+-rw-r----- 1 fsadoon fsadoon 3.3G Mar 15 19:31 SRR8146977_2.clean.fastq.gz
