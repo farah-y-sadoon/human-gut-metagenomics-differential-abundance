@@ -6,6 +6,6 @@
 *.zip
 *.tar*
 logs/download_db_*.txt
-
+*.kraken2
 # System files
 .DS_Store

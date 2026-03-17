@@ -1,0 +1,128 @@
+Starting SRR8146972...
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./results/kraken2/SRR8146972_report.tsv -o ./results/bracken/SRR8146972_species.bracken -k /scratch/fsadoon/kraken2_db/database150mers.kmer_distrib -l S -t 10
+PROGRAM START TIME: 03-17-2026 19:59:49
+BRACKEN SUMMARY (Kraken report: ./results/kraken2/SRR8146972_report.tsv)
+    >>> Threshold: 10 
+    >>> Number of species in sample: 658 
+	  >> Number of species with reads > threshold: 371 
+	  >> Number of species with reads < threshold: 287 
+    >>> Total reads in sample: 24624904
+	  >> Total reads kept at species level (reads > threshold): 9928603
+	  >> Total reads discarded (species reads < threshold): 827
+	  >> Reads distributed: 6302695
+	  >> Reads not distributed (eg. no species above threshold): 960
+	  >> Unclassified reads: 8391819
+BRACKEN OUTPUT PRODUCED: ./results/bracken/SRR8146972_species.bracken
+PROGRAM END TIME: 03-17-2026 19:59:49
+  Bracken complete.
+Finished SRR8146972.
+Starting SRR8146973...
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./results/kraken2/SRR8146973_report.tsv -o ./results/bracken/SRR8146973_species.bracken -k /scratch/fsadoon/kraken2_db/database150mers.kmer_distrib -l S -t 10
+PROGRAM START TIME: 03-17-2026 19:59:49
+BRACKEN SUMMARY (Kraken report: ./results/kraken2/SRR8146973_report.tsv)
+    >>> Threshold: 10 
+    >>> Number of species in sample: 733 
+	  >> Number of species with reads > threshold: 381 
+	  >> Number of species with reads < threshold: 352 
+    >>> Total reads in sample: 31826822
+	  >> Total reads kept at species level (reads > threshold): 9940807
+	  >> Total reads discarded (species reads < threshold): 1047
+	  >> Reads distributed: 10981754
+	  >> Reads not distributed (eg. no species above threshold): 1926
+	  >> Unclassified reads: 10901288
+BRACKEN OUTPUT PRODUCED: ./results/bracken/SRR8146973_species.bracken
+PROGRAM END TIME: 03-17-2026 19:59:49
+  Bracken complete.
+Finished SRR8146973.
+Starting SRR8146974...
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./results/kraken2/SRR8146974_report.tsv -o ./results/bracken/SRR8146974_species.bracken -k /scratch/fsadoon/kraken2_db/database150mers.kmer_distrib -l S -t 10
+PROGRAM START TIME: 03-17-2026 19:59:49
+BRACKEN SUMMARY (Kraken report: ./results/kraken2/SRR8146974_report.tsv)
+    >>> Threshold: 10 
+    >>> Number of species in sample: 671 
+	  >> Number of species with reads > threshold: 347 
+	  >> Number of species with reads < threshold: 324 
+    >>> Total reads in sample: 32555273
+	  >> Total reads kept at species level (reads > threshold): 12261886
+	  >> Total reads discarded (species reads < threshold): 889
+	  >> Reads distributed: 5626861
+	  >> Reads not distributed (eg. no species above threshold): 3527
+	  >> Unclassified reads: 14662110
+BRACKEN OUTPUT PRODUCED: ./results/bracken/SRR8146974_species.bracken
+PROGRAM END TIME: 03-17-2026 19:59:50
+  Bracken complete.
+Finished SRR8146974.
+Starting SRR8146975...
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./results/kraken2/SRR8146975_report.tsv -o ./results/bracken/SRR8146975_species.bracken -k /scratch/fsadoon/kraken2_db/database150mers.kmer_distrib -l S -t 10
+PROGRAM START TIME: 03-17-2026 19:59:50
+BRACKEN SUMMARY (Kraken report: ./results/kraken2/SRR8146975_report.tsv)
+    >>> Threshold: 10 
+    >>> Number of species in sample: 532 
+	  >> Number of species with reads > threshold: 288 
+	  >> Number of species with reads < threshold: 244 
+    >>> Total reads in sample: 32447339
+	  >> Total reads kept at species level (reads > threshold): 11537247
+	  >> Total reads discarded (species reads < threshold): 628
+	  >> Reads distributed: 13466826
+	  >> Reads not distributed (eg. no species above threshold): 1131
+	  >> Unclassified reads: 7441507
+BRACKEN OUTPUT PRODUCED: ./results/bracken/SRR8146975_species.bracken
+PROGRAM END TIME: 03-17-2026 19:59:50
+  Bracken complete.
+Finished SRR8146975.
+Starting SRR8146976...
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./results/kraken2/SRR8146976_report.tsv -o ./results/bracken/SRR8146976_species.bracken -k /scratch/fsadoon/kraken2_db/database150mers.kmer_distrib -l S -t 10
+PROGRAM START TIME: 03-17-2026 19:59:50
+BRACKEN SUMMARY (Kraken report: ./results/kraken2/SRR8146976_report.tsv)
+    >>> Threshold: 10 
+    >>> Number of species in sample: 522 
+	  >> Number of species with reads > threshold: 319 
+	  >> Number of species with reads < threshold: 203 
+    >>> Total reads in sample: 23227904
+	  >> Total reads kept at species level (reads > threshold): 11347109
+	  >> Total reads discarded (species reads < threshold): 574
+	  >> Reads distributed: 7308571
+	  >> Reads not distributed (eg. no species above threshold): 745
+	  >> Unclassified reads: 4570905
+BRACKEN OUTPUT PRODUCED: ./results/bracken/SRR8146976_species.bracken
+PROGRAM END TIME: 03-17-2026 19:59:50
+  Bracken complete.
+Finished SRR8146976.
+Starting SRR8146977...
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./results/kraken2/SRR8146977_report.tsv -o ./results/bracken/SRR8146977_species.bracken -k /scratch/fsadoon/kraken2_db/database150mers.kmer_distrib -l S -t 10
+PROGRAM START TIME: 03-17-2026 19:59:50
+BRACKEN SUMMARY (Kraken report: ./results/kraken2/SRR8146977_report.tsv)
+    >>> Threshold: 10 
+    >>> Number of species in sample: 620 
+	  >> Number of species with reads > threshold: 341 
+	  >> Number of species with reads < threshold: 279 
+    >>> Total reads in sample: 35702587
+	  >> Total reads kept at species level (reads > threshold): 9594123
+	  >> Total reads discarded (species reads < threshold): 758
+	  >> Reads distributed: 12033061
+	  >> Reads not distributed (eg. no species above threshold): 1269
+	  >> Unclassified reads: 14073376
+BRACKEN OUTPUT PRODUCED: ./results/bracken/SRR8146977_species.bracken
+PROGRAM END TIME: 03-17-2026 19:59:50
+  Bracken complete.
+Finished SRR8146977.
+Abundance estimation complete.
+total 3.0K
+-rw-r----- 1 fsadoon fsadoon 20K Mar 17 12:59 SRR8146972_species.bracken
+-rw-r----- 1 fsadoon fsadoon 21K Mar 17 12:59 SRR8146973_species.bracken
+-rw-r----- 1 fsadoon fsadoon 19K Mar 17 12:59 SRR8146974_species.bracken
+-rw-r----- 1 fsadoon fsadoon 16K Mar 17 12:59 SRR8146975_species.bracken
+-rw-r----- 1 fsadoon fsadoon 17K Mar 17 12:59 SRR8146976_species.bracken
+-rw-r----- 1 fsadoon fsadoon 18K Mar 17 12:59 SRR8146977_species.bracken

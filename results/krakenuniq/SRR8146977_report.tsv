@@ -1,2 +1,0 @@
-# KrakenUniq v#####=VERSION=##### DATE:2026-03-16T15:14:58Z DB:../krakenuniq_db DB_SIZE:404451462724 WD:/scratch/fsadoon/human-gut-metagenomics-differential-abundance
-# CL:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/krakenuniq/1.0.4/scripts/krakenuniq --db ../krakenuniq_db --threads 32 --preload --paired ./data/filtered/SRR8146977_1.clean.fastq.gz ./data/filtered/SRR8146977_2.clean.fastq.gz --output ./results/krakenuniq/SRR8146977.kraken --report-file ./results/krakenuniq/SRR8146977_report.tsv --gzip-compressed
