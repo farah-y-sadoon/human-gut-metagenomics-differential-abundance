@@ -1,7 +1,7 @@
 sample_id,diet,srr,location
-1,omnivore,SRR8146935,Turin
-2,omnivore,SRR8146936,Turin
-3,omnivore,SRR8146938,Turin
-4,vegan,SRR8146944,Turin
-5,vegan,SRR8146951,Bari
-6,vegan,SRR8146952,Bari
+VOV26,omnivore,SRR8146972,Turin
+VOV114,vegan,SRR8146973,Turin
+VOV113,vegan,SRR8146974,Turin
+VOV77,omnivore,SRR8146975,Turin
+VOV70,omnivore,SRR8146976,Turin
+VOV29,vegan,SRR8146977,Turin
