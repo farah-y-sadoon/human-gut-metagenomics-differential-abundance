@@ -5,7 +5,7 @@
 #SBATCH --time=8:00:00
 #SBATCH --account=def-cottenie
 #SBATCH --cpus-per-task=32
-#SBATCH --mem=150G
+#SBATCH --mem=400G
 #SBATCH --error=logs/%j_kraken.err
 #SBATCH --output=logs/%j_kraken.out
 
@@ -13,7 +13,7 @@
 module load kraken2/2.1.6
 
 # Define path variables
-DB_PATH="/cvmfs/bio.data.computecanada.ca/content/databases/Core/kraken2_dbs/2026_02_15/k2_standard_20251015"
+DB_PATH="/scratch/fsadoon/kraken2_db/"
 INPUT_DIR="./data/filtered"
 OUTPUT_DIR="./results/kraken2"
 
@@ -30,6 +30,7 @@ for R1 in "$INPUT_DIR"/*_1.clean.fastq.gz; do
 
     # Run Kraken2 on each sample
     kraken2 --db "$DB_PATH" \
+        --confidence 0.15 \
         --threads 32 \
         --paired \
         --gzip-compressed \
