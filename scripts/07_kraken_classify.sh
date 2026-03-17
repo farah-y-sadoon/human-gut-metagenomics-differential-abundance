@@ -26,8 +26,7 @@ for R1 in "$INPUT_DIR"/*_1.clean.fastq.gz; do
 
     echo "Starting classification for sample $SAMPLE..."
 
-    # The 'apptainer exec' must wrap the actual command
-    # We bind /scratch so the container can see your files and DB
+    # Run KrakenUniq on each sample from apptainer
     apptainer exec --bind /scratch:/scratch "$SIF_PATH" \
     krakenuniq --db "$DB_PATH" \
         --threads 32 \
