@@ -44,10 +44,21 @@ Trim adapter sequences using Fastp
 # Submit job to trim adapters with Fastp
 sbatch scripts/06_trim_adapters.sh
 ```
+## 2. Taxonomic Classification with KrakenUniq
+Classify reads with KrakenUniq
+```bash
+# Pull apptainer image for KrakenUniq
+module load apptainer
+apptainer pull tools/krakenuniq.sif https://depot.galaxyproject.org/singularity/krakenuniq:1.0.4--pl5321h6dccd9a_2
 
-## 2. Taxonomic Classification with Kraken2 / KrakenUniq
-
+# Submit job to perform taxonomic classification with KrakenUniq
+sbatch scripts/07_kraken_classify.sh
+```
 ## 3. Abundance Restimation with Bracken
+Re-estimate abundance with Bracken
+```bash
+
+``` 
 
 ## 4. Data Analysis and Exploration in R
 Rarefaction to observe number of taxa
