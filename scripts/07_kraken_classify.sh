@@ -5,7 +5,7 @@
 #SBATCH --time=10:00:00
 #SBATCH --account=def-cottenie
 #SBATCH --cpus-per-task=32
-#SBATCH --mem=400G
+#SBATCH --mem=450G
 #SBATCH --error=logs/%j_kraken.err
 #SBATCH --output=logs/%j_kraken.out
 
