@@ -9,3 +9,6 @@ logs/download_db_*.txt
 *.kraken2
 # System files
 .DS_Store
+scripts/.RData
+.gitignore
+scripts/.Rhistory
