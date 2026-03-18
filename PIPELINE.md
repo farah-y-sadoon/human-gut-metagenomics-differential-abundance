@@ -57,10 +57,17 @@ sbatch scripts/07_kraken_classify.sh
 ## 3. Abundance Restimation with Bracken
 Re-estimate abundance with Bracken
 ```bash
+# Submit job to perform abundance re-estimation with Bracken
+sbatch scripts/08_bracken_estimate.sh
+
+# Use kraken-biom to convert the Bracken report output to BIOM format
+mamba create -n kraken-biom -c bioconda kraken-biom -y
+mamba activate kraken-biom
+kraken-biom results/kraken2/*_report_bracken_species.tsv -o results/bracken/combined.biom --fmt json
 
 ``` 
-
 ## 4. Data Analysis and Exploration in R
+
 Rarefaction to observe number of taxa
 Visualize relative abundance
 Alpha diversity - 2 measures
