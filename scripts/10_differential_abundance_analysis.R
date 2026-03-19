@@ -1,7 +1,5 @@
 "Diversity and differential abundance analysis of human gut microbiome between individuals with a vegan diet (n = 3) and omnivore diet (n = 3)"
-# This analysis is based on: 
-# Lecture 12 and 13 of BINF 6110 - Genomic Methods
-# 
+# This analysis is based on Lecture 12 and 13 of BINF 6110 - Genomic Methods
 
 
 # Install and load libraries ----
@@ -74,7 +72,6 @@ df_phy <- df_phy %>%
   rename(srr = Sample, otu = OTU, abundance = Abundance, rank2 = Rank2) %>% 
   mutate(rank2 = replace(rank2, rank2 == "", "Unknown"))
 
-names(df_phy)
 # Create relative abundance plot
 p4 <- ggplot(df_phy, aes(x = srr, y = abundance, fill = rank2)) +
   geom_bar(stat = "identity", position = "stack") +
@@ -231,8 +228,6 @@ count_matrix <- as.matrix(otu_table(physeq_beta))
 if(!taxa_are_rows(physeq_beta)) {
   count_matrix <- t(count_matrix) # transpose table if taxa are not rows
   } 
-
-conditions <- metadata_beta$diet
 
 set.seed(123)
 aldex_out <- aldex(Y = count_matrix, 
