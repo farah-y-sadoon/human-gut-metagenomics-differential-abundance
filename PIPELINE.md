@@ -34,7 +34,7 @@ Assess quality of raw reads with FastQC and MultiQC
 sbatch scripts/04_fastqc_raw_reads.sh
 
 # Create mamba environment for MultiQC
-mamba install -n multiqc -c bioconda multiqc
+mamba create -n multiqc -c bioconda multiqc -y
 
 # Submit job to run MultiQC
 sbatch scripts/05_multiqc_raw_reads_report.sh
@@ -42,6 +42,7 @@ sbatch scripts/05_multiqc_raw_reads_report.sh
 Trim adapter sequences using Fastp
 ```bash
 # Submit job to trim adapters with Fastp
+# Note: Fastp generates its own QC report for each sample in results/fastp/
 sbatch scripts/06_trim_adapters.sh
 ```
 ## 2. Taxonomic Classification with KrakenUniq
@@ -60,19 +61,14 @@ Re-estimate abundance with Bracken
 # Submit job to perform abundance re-estimation with Bracken
 sbatch scripts/08_bracken_estimate.sh
 
-# Use kraken-biom to convert the Bracken report output to BIOM format
+# Create mamba kraken-bion environment
 mamba create -n kraken-biom -c bioconda kraken-biom -y
-mamba activate kraken-biom
-kraken-biom results/kraken2/*_report_bracken_species.tsv -o results/bracken/combined.biom --fmt json
 
+# Run script to use kraken-biom to convert the Bracken report output to BIOM format
+./scripts/09_kraken_biom_convert.sh
 ``` 
-## 4. Data Analysis and Exploration in R
-
-Rarefaction to observe number of taxa
-Visualize relative abundance
-Alpha diversity - 2 measures
-Beta diversity - 2 measures
-
-## Differential Abundance Analysis in R with ANCOM-BC2 / Aldex3
-Heatmap
-Volcano plots or Bar plots
+## 4. Diversity Analysis and Differential Abundance Analysis in R with Aldex3
+```bash
+# Run R script for diversity and differential abundance analysis
+Rscript scripts/10_differential_abundance_analysis.R
+```
