@@ -49,7 +49,7 @@ rownames(otu_table) <- gsub("_report_bracken_species", "", rownames(otu_table))
 
 # Diversity Analysis ----
 # Rarefaction ----
-png("../figs/03_rarefaction_curve.png", width = 3000, height = 2000, res = 300)
+png("../figs/02_rarefaction_curve.png", width = 3000, height = 2000, res = 300)
 rarecurve <- rarecurve(otu_table, step = 100, label = TRUE, col = 1:6, lty = 1, lwd = 2,
                         xlab = "Sequencing Depth",
                         ylab = "Number of Species")
@@ -73,12 +73,12 @@ df_phy <- df_phy %>%
   mutate(rank2 = replace(rank2, rank2 == "", "Unknown"))
 
 # Create relative abundance plot
-p4 <- ggplot(df_phy, aes(x = srr, y = abundance, fill = rank2)) +
+p3 <- ggplot(df_phy, aes(x = srr, y = abundance, fill = rank2)) +
   geom_bar(stat = "identity", position = "stack") +
   scale_fill_viridis(discrete = TRUE, option = "D") + 
   labs(y = "Relative Abundance", x = "Sample (SRR)", fill = "Phylum") + 
   facet_wrap(~diet, scales = "free_x")
-ggsave("../figs/04_phylum_abundance.png", plot = p4, width = 10, height = 6.67, dpi = 300, units = "in")
+ggsave("../figs/03_phylum_abundance.png", plot = p3, width = 10, height = 6.67, dpi = 300, units = "in")
                                       
 ## Alpha Diversity Analysis ----
 ### Dominance / Evennness - Berger-Parker ----
@@ -152,8 +152,8 @@ shannon_plot <- ggplot(shannon, aes(x = `Sample (SRR)`, y = Shannon, color = die
 ggsave("../figs/shannon_plot.png", plot = shannon_plot, width = 10, height = 6.67, dpi = 300, units = "in")
 
 # Save alpha diversity plot and measures
-p5 <- bp_plot / shannon_plot + plot_layout(guides = "collect")
-ggsave("../figs/05_alpha_diversity_plots.png", plot = p5, width = 10, height = 6.67, dpi = 300, units = "in")
+p4 <- bp_plot / shannon_plot + plot_layout(guides = "collect")
+ggsave("../figs/04_alpha_diversity_plots.png", plot = p4, width = 10, height = 6.67, dpi = 300, units = "in")
 
 alpha_diversity <- shannon %>%
   left_join(berger_parker, by = c("Sample (SRR)", "diet")) %>%
@@ -190,8 +190,8 @@ jaccard_pcoa_plot <- plot_ordination(physeq_beta, ord.pcoa.jaccard, color = "die
   theme(legend.position = "none")
 
 # Save beta-diversity plots
-p6 <- bray_pcoa_plot + jaccard_pcoa_plot + plot_layout(guides = "collect")
-ggsave("../figs/06_beta_diversity_plots.png", plot = p6, width = 10, height = 6.67, dpi = 300, units = "in")
+p5 <- bray_pcoa_plot + jaccard_pcoa_plot + plot_layout(guides = "collect")
+ggsave("../figs/05_beta_diversity_plots.png", plot = p5, width = 10, height = 6.67, dpi = 300, units = "in")
 
 ### PERMANOVA ----
 # Setup metadata 
