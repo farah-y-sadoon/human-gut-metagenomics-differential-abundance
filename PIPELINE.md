@@ -1,6 +1,8 @@
 # Diet-driven differences in the human gut microbiome: A bacterial community analysis
 
 ## 0. Environment Setup and Data Aquisition
+A folder was created in the scratch directory of the Digital Research Alliance Canada's Fir cluster for this analysis.
+
 Create metadata CSV (manual)
 ```bash
 nano data/metadata/metadata.csv
@@ -45,14 +47,10 @@ Trim adapter sequences using Fastp
 # Note: Fastp generates its own QC report for each sample in results/fastp/
 sbatch scripts/06_trim_adapters.sh
 ```
-## 2. Taxonomic Classification with KrakenUniq
-Classify reads with KrakenUniq
+## 2. Taxonomic Classification with Kraken2
+Classify reads with Kraken2
 ```bash
-# Pull apptainer image for KrakenUniq
-module load apptainer
-apptainer pull tools/krakenuniq.sif https://depot.galaxyproject.org/singularity/krakenuniq:1.0.4--pl5321h6dccd9a_2
-
-# Submit job to perform taxonomic classification with KrakenUniq
+# Submit job to perform taxonomic classification with Kraken2
 sbatch scripts/07_kraken_classify.sh
 ```
 ## 3. Abundance Restimation with Bracken
@@ -67,7 +65,7 @@ mamba create -n kraken-biom -c bioconda kraken-biom -y
 # Run script to use kraken-biom to convert the Bracken report output to BIOM format
 ./scripts/09_kraken_biom_convert.sh
 ``` 
-## 4. Diversity Analysis and Differential Abundance Analysis in R with Aldex3
+## 4. Diversity and Differential Abundance Analysis in R with Aldex3
 ```bash
 # Run R script for diversity and differential abundance analysis
 Rscript scripts/10_differential_abundance_analysis.R
