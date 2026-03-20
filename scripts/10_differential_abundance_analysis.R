@@ -233,7 +233,9 @@ set.seed(123)
 aldex_out <- aldex(Y = count_matrix, 
                    X = ~diet, 
                    data = metadata_beta,
-                   scale = clr.sm, 
+                   method = "lm",
+                   scale = clr.sm,
+                   p.adjust.method = "BH",
                    test = "t.HC3")
 
 # Pull out relevant results
