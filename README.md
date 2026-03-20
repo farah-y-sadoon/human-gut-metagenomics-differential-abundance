@@ -50,6 +50,10 @@ flowchart LR
 ```
 Figure 1. Workflow used for data acquisition, taxonomic classification and diversity analyses to assess differences in gut microbiome composition in human gut samples of vegan and omnivore groups.
 
+## Results
+
+## Discussion
+
 ## References
 
 
