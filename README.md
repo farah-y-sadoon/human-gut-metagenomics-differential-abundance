@@ -119,8 +119,91 @@ The exploration of alpha diversity revealed that dominance, measured by the Berg
 
 Bray-Curtis and Jaccard distances were used to assess between-sample differences in community composition. PERMANOVA analysis provided no evidence of a significant difference between the vegan and omnivore groups (Figure 5, Table 2). A notable limitation of this study was the small sample size for each group (n = 3), as the statistical power of such a small study requires substantial differences between groups to reach significance. Although no significant separation between dietary groups was detected, this may reflect insufficient statistical power rather than a true absence of differences, as significant differences in gut microbiome composition have been linked to diet (41).
 
-To identify specific taxa contributing to compositional differences between groups, differential abundance analysis was conducted using ALDEx3. The results indicated no significant differences between vegan and omnivore groups for CLR estimates of species abundance (Figure 6). Nevertheless, directional trends demonstrated potential differences between groups, which may reflect the low statistical power of the small sample size used here (Figure 6). Specifically, most *Prevotella* species showed higher relative abundance in the omnivore group. Similarly to Fackelman and colleagues’ recent study, *Prevotella copri* was not a strong signature of vegan diets (42). The increased relative abundance of *Prevotella* species in the omnivore group observed here warrants further investigation in a larger cohort to determine whether this reflects a consistent dietary indicator or an artifact of the small sample size. Furthermore, *Akkermansia muciniphila*, a species within Verrucomicrobiota, showed higher relative abundance in the vegan group (Figure 6). *A. muciniphila* is considered a promising probiotic candidate, as it has been linked to improved gut health and an inverse relationship with chronic conditions such as inflammatory bowel disease and type 2 diabetes (43). Future functional experiments would help elucidate the biological mechanisms underlying its abundance and whether diet is an important factor for its colonization and persistence in the human gut.
+To identify specific taxa contributing to compositional differences between groups, differential abundance analysis was conducted using ALDEx3. The results indicated no significant differences between vegan and omnivore groups for CLR estimates of species abundance (Figure 6). Nevertheless, directional trends demonstrated potential differences between groups, which may reflect the low statistical power of the small sample size used here (Figure 6). Specifically, most *Prevotella* species showed higher relative abundance in the omnivore group. Similarly to Fackelman and colleagues’ recent study, *Prevotella copri* was not a strong signature of vegan diets (41). The increased relative abundance of *Prevotella* species in the omnivore group observed here warrants further investigation in a larger cohort to determine whether this reflects a consistent dietary indicator or an artifact of the small sample size. Furthermore, *Akkermansia muciniphila*, a species within Verrucomicrobiota, showed higher relative abundance in the vegan group (Figure 6). *A. muciniphila* is considered a promising probiotic candidate, as it has been linked to improved gut health and an inverse relationship with chronic conditions such as inflammatory bowel disease and type 2 diabetes (42). Future functional experiments would help elucidate the biological mechanisms underlying its abundance and whether diet is an important factor for its colonization and persistence in the human gut.
 
 Overall, this study applied a shotgun metagenomics workflow to investigate gut microbiome composition in vegan and omnivore diet groups. While no statistically significant differences were detected across any of the diversity or differential abundance analyses, consistent trends emerged across multiple metrics. Elevated Verrucomicrobiota and *Akkermansia muciniphila* in vegans, alongside higher species dominance and enrichment of *Prevotella* species in omnivores, suggest that diet may influence gut microbiome composition in ways that are biologically meaningful but require larger sample sizes to detect statistically. Future studies with greater statistical power and functional profiling would help to clarify the relationship between dietary patterns and gut microbiome composition, and further explore the potential health implications of diet-associated taxa.
 
 ## References
+1. Wang, W.-L., Xu, S.-Y., Ren, Z.-G., Tao, L., Jiang, J.-W., & Zheng, S.-S. (2015). Application of metagenomics in the human gut microbiome. World Journal of Gastroenterology, 21(3), 803. https://doi.org/10.3748/wjg.v21.i3.803
+
+2. Qin, J., Li, R., Raes, J., Arumugam, M., Burgdorf, K. S., Manichanh, C., Nielsen, T., Pons, N., Levenez, F., Yamada, T., Mende, D. R., Li, J., Xu, J., Li, S., Li, D., Cao, J., Wang, B., Liang, H., Zheng, H., … Wang, J. (2010). A human gut microbial gene catalogue established by metagenomic sequencing. Nature, 464(7285), 59–65. https://doi.org/10.1038/nature08821 
+
+3. Gill, S. R., Pop, M., DeBoy, R. T., Eckburg, P. B., Turnbaugh, P. J., Samuel, B. S., Gordon, J. I., Relman, D. A., Fraser-Liggett, C. M., & Nelson, K. E. (2006). Metagenomic analysis of the human distal gut microbiome. Science, 312(5778), 1355–1359. https://doi.org/10.1126/science.1124234 
+
+4. Durazzi, F., Sala, C., Castellani, G., Manfreda, G., Remondini, D., & De Cesare, A. (2021). Comparison between 16S rrna and shotgun sequencing data for the taxonomic characterization of the gut microbiota. Scientific Reports, 11(1). https://doi.org/10.1038/s41598-021-82726-y 
+
+5. Ye, S. H., Siddle, K. J., Park, D. J., & Sabeti, P. C. (2019). Benchmarking metagenomics tools for taxonomic classification. Cell, 178(4), 779–794. https://doi.org/10.1016/j.cell.2019.07.010 
+
+6. Nearing, J. T., Douglas, G. M., Hayes, M. G., MacDonald, J., Desai, D. K., Allward, N., Jones, C. M., Wright, R. J., Dhanani, A. S., Comeau, A. M., & Langille, M. G. (2022). Microbiome differential abundance methods produce different results across 38 datasets. Nature Communications, 13(1). https://doi.org/10.1038/s41467-022-28034-z 
+
+7. Chorlton, S. D. (2024). Ten common issues with reference sequence databases and how to mitigate them. Frontiers in Bioinformatics, 4. https://doi.org/10.3389/fbinf.2024.1278228   
+
+8. Wood, D. E., Lu, J., & Langmead, B. (2019). Improved metagenomic analysis with Kraken 2. Genome Biology, 20(1). https://doi.org/10.1186/s13059-019-1891-0 
+
+9. Breitwieser, F. P., Baker, D. N., & Salzberg, S. L. (2018). Krakenuniq: Confident and fast metagenomics classification using unique K-Mer counts. Genome Biology, 19(1). https://doi.org/10.1186/s13059-018-1568-0 
+
+10. Ounit, R., Wanamaker, S., Close, T. J., & Lonardi, S. (2015). CLARK: Fast and accurate classification of metagenomic and genomic sequences using discriminative K-MERS. BMC Genomics, 16(1). https://doi.org/10.1186/s12864-015-1419-2
+
+11. Lu, J., Breitwieser, F. P., Thielen, P., & Salzberg, S. L. (2017). Bracken: Estimating species abundance in metagenomics data. PeerJ Computer Science, 3. https://doi.org/10.7717/peerj-cs.104 
+
+12. Liu, Y., Ghaffari, M. H., Ma, T., & Tu, Y. (2024). Impact of database choice and confidence score on the performance of taxonomic classification using kraken2. aBIOTECH, 5(4), 465–475. https://doi.org/10.1007/s42994-024-00178-0 
+
+13. Lin, H., & Peddada, S. D. (2020). Analysis of compositions of microbiomes with bias correction. Nature Communications, 11(1). https://doi.org/10.1038/s41467-020-17041-7 
+
+14. Fernandes, A. D., Reid, J. N., Macklaim, J. M., McMurrough, T. A., Edgell, D. R., & Gloor, G. B. (2014). Unifying the analysis of high-throughput sequencing datasets: Characterizing RNA-seq, 16S rrna gene sequencing and selective growth experiments by compositional data analysis. Microbiome, 2(1). https://doi.org/10.1186/2049-2618-2-15 
+
+15. Pelto, J., Auranen, K., Kujala, J. V., & Lahti, L. (2025). Elementary methods provide more replicable results in microbial differential abundance analysis. Briefings in Bioinformatics, 26(2). https://doi.org/10.1093/bib/bbaf130 
+
+16. Justin Silverman (2026). ALDEx3: Linear Models for Sequence Count Data. R package version 1.0.1, https://cran.r-project.org/web/packages/ALDEx3 
+
+17. De Filippis, F., Vitaglione, P., Cuomo, R., Berni Canani, R., & Ercolini, D. (2018). Dietary interventions to modulate the gut microbiome—how far away are we from Precision Medicine. Inflammatory Bowel Diseases, 24(10), 2142–2154. https://doi.org/10.1093/ibd/izy080
+
+18. De Filippis, F., Pasolli, E., Tett, A., Tarallo, S., Naccarati, A., De Angelis, M., Neviani, E., Cocolin, L., Gobbetti, M., Segata, N., & Ercolini, D. (2019). Distinct genetic and functional traits of human intestinal prevotella copri strains are associated with different habitual diets. Cell Host &amp; Microbe, 25(3). https://doi.org/10.1016/j.chom.2019.01.004 
+
+19. Government of Canada. Digital Research Alliance of Canada. (2023). https://alliancecan.ca  
+
+20. Mamba-org. (n.d.). Mamba: The fast cross-platform package manager [Computer software]. GitHub. https://github.com/mamba-org/mamba 
+
+21. Sadoon, F. (2026). human-gut-metagenomics-differential-abundance [Source code]. GitHub. https://github.com/farah-y-sadoon/human-gut-metagenomics-differential-abundance 
+
+22. Langmead, B. (n.d.). Index zone. Index zone by BenLangmead. https://benlangmead.github.io/aws-indexes/k2 
+
+23. U.S. National Library of Medicine. (n.d.). 01. downloading SRA Toolkit · NCBI/SRA-Tools Wiki · github. National Center for Biotechnology Information. https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software 
+
+24. Babraham Bioinformatics. (n.d.). FastQC. FastQC a quality control tool for high throughput sequence data. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ 
+
+25. Ewels, P., Magnusson, M., Lundin, S., & Käller, M. (2016). MultiQC: Summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048. https://doi.org/10.1093/bioinformatics/btw354 
+
+26. Chen, S. (2025). Fastp 1.0: An ultra‐fast all‐round tool for FASTQ data quality control and preprocessing. iMeta, 4(5). https://doi.org/10.1002/imt2.70078 
+
+27. Dabdoub, SM (2016). kraken-biom: Enabling interoperative format conversion for Kraken results (Version 1.2) [Software]. Available at https://github.com/smdabdoub/kraken-biom
+
+28. R Core Team. (n.d.). R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing. R. https://www.r-project.org/ 
+
+29. McMurdie, P. J., & Holmes, S. (2013). Phyloseq: An R package for reproducible interactive analysis and graphics of Microbiome Census Data. PLOS ONE. https://doi.org/10.1371/journal.pone.0061217 
+
+30. Oksanen, J., et al. (2026). vegan: Community Ecology Package. R package version 2.7-3. https://vegandevs.github.io/vegan/ 
+
+31. Cassol, I., Ibañez, M., & Bustamante, J. P. (2025, January 3). Key features and guidelines for the application of Microbial Alpha Diversity Metrics. Nature News. https://www.nature.com/articles/s41598-024-77864-y 
+
+32. Wickham, H. (n.d.). GGPLOT2. SpringerLink. https://link.springer.com/book/10.1007/978-3-319-24277-4 
+
+33. Kwon, S., Park, S., Lee, B., & Yoon, S. (2013). In-depth analysis of interrelation between quality scores and real errors in Illumina reads. Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference. https://pubmed.ncbi.nlm.nih.gov/24109767/
+
+34. Quinn, T. P., Erb, I., Gloor, G., Notredame, C., Richardson, M. F., & Crowley, T. M. (2019). A field guide for the compositional analysis of any-omics data. GigaScience. https://pmc.ncbi.nlm.nih.gov/articles/PMC6755255/ 
+
+35. Qin, J., Li, R., Raes, J., Arumugam, M., Burgdorf, K. S., Manichanh, C., Nielsen, T., Pons, N., Levenez, F., Yamada, T., Mende, D. R., Li, J., Xu, J., Li, S., Li, D., Cao, J., Wang, B., Liang, H., Zheng, H., … Wang, J. (2010). A human gut microbial gene catalogue established by metagenomic sequencing. Nature News. https://www.nature.com/articles/nature08821 
+
+36. Segata, N., Haake, S. K., Mannon, P., Lemon, K. P., Waldron, L., Gevers, D., Huttenhower, C., & Izard, J. (2012). Composition of the adult digestive tract bacterial microbiome based on seven mouth surfaces, tonsils, throat and stool samples - genome biology. SpringerLink. https://link.springer.com/article/10.1186/gb-2012-13-6-r42 
+
+37. Cecilia, B., Riccardo, L. L., Gianenrico, R., Giulia, G., Vincenzo, C., & Antonio, G. (2018). Actinobacteria: A relevant minority for the maintenance of gut homeostasis: Article information: J-global. Digestive and Liver Disease. https://www.sciencedirect.com/science/article/abs/pii/S159086581830210X 
+
+38. Soldán, M., Argalášová, Ľ., Hadvinová, L., Galileo, B., & Babjaková, J. (2024). The effect of dietary types on gut microbiota composition and development of non-communicable diseases: A narrative review. Nutrients. https://pmc.ncbi.nlm.nih.gov/articles/PMC11434870/ 
+
+39. Losno, E. A., Sieferle, K., Perez-Cueto, F. J. A., & Ritz, C. (2021). Vegan diet and the gut microbiota composition in healthy adults. MDPI. https://www.mdpi.com/2072-6643/13/7/2402 
+
+40. Rodrigues, V. F., Elias-Oliveira, J., Pereira, Í. S., Pereira, J. A., Barbosa, S. C., Machado, M. S. G., & Carlos, D. (2022). Akkermansia muciniphila and Gut Immune System: A Good Friendship That Attenuates Inflammatory Bowel Disease, Obesity, and Diabetes. Frontiers in immunology, 13, 934695. https://doi.org/10.3389/fimmu.2022.934695  
+
+41. Fackelmann, G., Manghi, P., Carlino, N., Heidrich, V., Piccinno, G., Ricci, L., Piperni, E., Arrè, A., Bakker, E., Creedon, A. C., Francis, L., Capdevila Pujol, J., Davies, R., Wolf, J., Bermingham, K. M., Berry, S. E., Spector, T. D., Asnicar, F., & Segata, N. (2025). Gut microbiome signatures of vegan, vegetarian and omnivore diets and associated health outcomes across 21,561 individuals. Nature microbiology. https://pmc.ncbi.nlm.nih.gov/articles/PMC11726441/ 
+
+42. Pellegrino, A., Coppola, G., Santopaolo, F., Gasbarrini, A., & Ponziani, F. R. (2023). Role of akkermansia in human diseases: From causation to therapeutic properties. Nutrients. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10142179/ 
